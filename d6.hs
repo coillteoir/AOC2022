@@ -1,9 +1,7 @@
 import Data.List
 
 isUnique :: [Char] -> Bool
-isUnique quad = if quad == (nub quad)
-                then True
-                else False
+isUnique quad = quad == (nub quad)
 --to get part 1 just swap 14 with 4 :D
 findMarker :: [Char] -> Int
 findMarker stream = if isUnique (take 14 stream) 
